@@ -91,7 +91,7 @@ GLOBAL_VAR_INIT(security_level, SEC_LEVEL_GREEN)
 				for(var/obj/machinery/computer/shuttle/pod/pod in GLOB.machines)
 					pod.admin_controlled = 0
 			if(SEC_LEVEL_OMEGA)
-				minor_announce(CONFIG_GET(string/alert_delta), "Attention! Condition Omega reached!",1)
+				minor_announce(CONFIG_GET(string/alert_omega), "Attention! Condition Omega reached!",1)
 				if(SSshuttle.emergency.mode == SHUTTLE_CALL || SSshuttle.emergency.mode == SHUTTLE_RECALL)
 					if(GLOB.security_level < SEC_LEVEL_YELLOW)
 						SSshuttle.emergency.modTimer(0.25)
