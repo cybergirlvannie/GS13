@@ -13,7 +13,7 @@
 	if(GLOB.security_level == SEC_LEVEL_RED || GLOB.security_level == SEC_LEVEL_OMEGA)
 		. = ..()
 	else
-		to_chat(usr, "The storage unit will only unlock during a Red or Delta security alert.")
+		to_chat(usr, "The storage unit will only unlock during Red alert or Omega alert.")
 
 /obj/structure/guncase/plasma/attack_hand(mob/user)
 	return MouseDrop(user)
