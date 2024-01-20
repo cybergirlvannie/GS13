@@ -10,7 +10,7 @@
 	return
 
 /obj/structure/guncase/plasma/MouseDrop(over_object, src_location, over_location)
-	if(GLOB.security_level == SEC_LEVEL_RED || GLOB.security_level == SEC_LEVEL_DELTA)
+	if(GLOB.security_level == SEC_LEVEL_RED || GLOB.security_level == SEC_LEVEL_OMEGA)
 		. = ..()
 	else
 		to_chat(usr, "The storage unit will only unlock during a Red or Delta security alert.")
