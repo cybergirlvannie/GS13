@@ -26,6 +26,7 @@
 #define GENETICIST		(1<<5)
 #define VIROLOGIST		(1<<6)
 #define JR_DOCTOR       (1<<7)
+#define PARAMEDIC       (1<<8)
 #define JR_SCIENTIST    (1<<9)
 #define MED_PSYCH       (1<<14)
 
